@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="maestro@alphatech.id">
+        <link rel="icon" href="favicon.ico">
+
+        <title>Alpha Tech Academy</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header col-md-3">
+                        <a class="navbar-brand" href="#">Alpha Tech Academy</a>
+                    </div>
+                    <ul class="nav navbar-nav justify-content-end col-md-9">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                        <li><a href="{% url 'mentor' %}">Mentor</a></li>
+                        <li><a href="{% url 'mentee' %}">Mentee</a></li>
+                        <li><a href="{% url 'author' %}">Author</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="row banner">
+            <div class="col-md-12 text-center banner-content">
+                <div class="banner-item">
+                    <div ><img src="{% static 'images/alpha-logo.png' %}" alt=""></div>
+                    <div ><h1>Alpha Tech Academy</h1></div>
+                    <div >Alpha Tech Academy is a tech talent incubator that gives everyone (even not IT background) a chance to be a professional Tech talent within 3 months. Contact person: Email : academy@alphatech.id Mobile phone : 0877 9609 9530</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="wrapper">
+                <div class="content-wrapper">
+                    <div class="row content-item">
+                        <div class="col-md-4">
+                            <img src="{% static 'images/benefit.png' %}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Learn awesome tech</h2>
+                            <p>You will learn about programming language, such as Python and Javascript, build back-end apps using Flask framework with microservice concept, build client-site apps using React Library, etc.</p>
+                        </div>
+                    </div>
+                    <div class="row content-item">
+                        <div class="col-md-4">
+                            <img src="{% static 'images/search-job.png' %}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Land new job</h2>
+                            <p>If you can pass this awesome program, you will be part of our reliable tech team for especially Software Engineer position and other tech position such as Quality Engineer, System Analyst, etc.</p>
+                        </div>
+                    </div>
+                    <div class="row content-item">
+                        <div class="col-md-4">
+                            <img src="{% static 'images/get-paid.png' %}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Get paid to learn</h2>
+                            <p>Join for free and earn some money. Yes you read that right, no registration fee required to enter this program. To make things even better, you will receive pocket money just for participating. Cool, right?</p>
+                        </div>
+                    </div>
+                    <div class="row content-item">
+                        <div class="col-md-4">
+                            <img src="{% static 'images/mission.png' %}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <h2>Who are we?</h2>
+                                <p>Alpha Tech Academy is a tech talent incubation that gives anyone any chance (not even an IT background) to learn within 3 months of being a professional Tech Talent. What is our mission? We want to improve capability Tech Talent in Indonesia</p>
+                            </div>
+                            <div class="row">
+                                <h2>What is our mission?</h2>
+                                <p>We want to improve capability Tech Talent in Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row content-item">
+                        <div class="row title-text">
+                            <h1 class="centered">What will you learn?</h1>
+                        </div>
+                        <div class="row learning-content">
+                            <div class="col-md-3">
+                                <div class="learning-material">
+                                    <img src="{% static 'images/learn-html.png' %}" class="img-middle">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="learning-material">
+                                    <img src="{% static 'images/learn-programming.png' %}" class="img-middle">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="learning-material">
+                                    <img src="{% static 'images/learn-git.png' %}" class="img-middle">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="learning-material">
+                                    <img src="{% static 'images/learn-api.png' %}" class="img-middle">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="learning-material">
+                                    <img src="{% static 'images/learn-react.png' %}" class="img-middle">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="learning-material">
+                                    <img src="{% static 'images/learn-tdd.png' %}" class="img-middle">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="learning-material">
+                                    <img src="{% static 'images/learn-server.png' %}" class="img-middle">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="learning-material">
+                                    <img src="{% static 'images/learn-scrum.png' %}" class="img-middle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row content-product">
+            <div class="col-md-8 product-parent">
+                <div class="product">
+                    <p>Our Product:</p>
+                </div>
+                <div class="product">
+                    <img src="{% static 'images/logo-grey-alphapay.png' %}">
+                </div>
+                <div class="product">
+                    <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+                </div>
+                <div class="product">
+                    <img src="{% static 'images/logo-grey-alphabill.png' %}">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <strong>Contact Person:</strong>Email: academy@alphatech.id
+        </footer>
+    </body>
+
+</html>

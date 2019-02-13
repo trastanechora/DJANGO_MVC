@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mentor - Alpha Tech Academy</title>
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="maestro@alphatech.id">
+        <link rel="icon" href="favicon.ico">
+
+        <title>Alpha Tech Academy</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header col-md-3">
+                        <a class="navbar-brand" href="#">Alpha Tech Academy</a>
+                    </div>
+                    <ul class="nav navbar-nav justify-content-end col-md-9">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                        <li><a href="{% url 'mentor' %}">Mentor</a></li>
+                        <li><a href="{% url 'mentee' %}">Mentee</a></li>
+                        <li><a href="{% url 'author' %}">Author</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="row banner">
+            <div class="col-md-12 text-center banner-content">
+                <div class="banner-item">
+                    <div ><img src="{% static 'images/alpha-logo.png' %}" alt=""></div>
+                    <div ><h1>Alpha Tech Academy</h1></div>
+                    <div >Alpha Tech Academy is a tech talent incubator that gives everyone (even not IT background) a chance to be a professional Tech talent within 3 months. Contact person: Email : academy@alphatech.id Mobile phone : 0877 9609 9530</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="wrapper">
+                <div class="content-wrapper">
+                    <div class="row content-item">
+                        <div class="title-page"><h4>Our Mentor</h4></div>
+                    </div>
+
+                    <div class="row content-item">
+                        <div class="col-md-4">
+                            <img src="{% static 'images/people-andreas.png' %}" alt="" class="img-mentee">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Andreas Nugroho</h2>
+                            <p class="tag">Software Ninja (5 years experience)</p>
+                            <p>"Great place to learn about programming. Come join us!"</p>
+                        </div>
+                    </div>
+                    <div class="row content-item">
+                        <div class="col-md-4">
+                            <img src="{% static 'images/people-ramdhan.png' %}" alt="" class="img-mentee">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Ramdhan Hidayat</h2>
+                            <p class="tag">Master of Chaos (10 years experience)</p>
+                            <p>"We make this program with passion, hard work and heart. Let's get rock with us!"</p>
+                        </div>
+                    </div>
+                    <div class="row content-item">
+                        <div class="col-md-4">
+                            <img src="{% static 'images/people-trimo.png' %}" alt="" class="img-mentee">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Trimo Leksono</h2>
+                            <p class="tag">Magician (8 years experience)</p>
+                            <p>"The best place for who want to be a great IT talent."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row content-product">
+            <div class="col-md-8 product-parent">
+                <div class="product">
+                    <p>Our Product:</p>
+                </div>
+                <div class="product">
+                    <img src="{% static 'images/logo-grey-alphapay.png' %}">
+                </div>
+                <div class="product">
+                    <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+                </div>
+                <div class="product">
+                    <img src="{% static 'images/logo-grey-alphabill.png' %}">
+                </div>
+            </div>
+        </div>  
+        <footer>
+            <strong>Contact Person:</strong>Email: academy@alphatech.id
+        </footer>
+    </body>
+
+</html>

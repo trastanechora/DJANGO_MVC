@@ -1,0 +1,40 @@
+{% extends 'template.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Mentee - Alpha Tech Academy</title>
+{% endblock %}
+
+{% block content %}
+<div class="row content-item">
+    <div class="title-page"><h4>Our Mentee</h4></div>
+</div>
+
+<div class="row content-item">
+    <div class="col-md-4">
+        <img src="{% static 'images/mentee_steve.png' %}" alt="" class="img-mentee">
+    </div>
+    <div class="col-md-8">
+        <h2>Steve Jobs</h2>
+        <p>"I learn so much from Alpha Tech."</p>
+    </div>
+</div>
+<div class="row content-item">
+    <div class="col-md-4">
+        <img src="{% static 'images/mentee_lary.png' %}" alt="" class="img-mentee">
+    </div>
+    <div class="col-md-8">
+        <h2>Larry Page</h2>
+        <p>"Great place to learn about programming."</p>
+    </div>
+</div>
+<div class="row content-item">
+    <div class="col-md-4">
+        <img src="{% static 'images/mentee_mark.png' %}" alt="" class="img-mentee">
+    </div>
+    <div class="col-md-8">
+        <h2>Mark Zuckenberk</h2>
+        <p>"The best place for who want to be a great IT talent"</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mentor - Alpha Tech Academy</title>
+{% endblock %}
+
+{% block content %}
+<div class="row content-item">
+    <div class="title-page"><h4>Our Mentor</h4></div>
+</div>
+
+<div class="row content-item">
+    <div class="col-md-4">
+        <img src="{% static 'images/people-andreas.png' %}" alt="" class="img-mentee">
+    </div>
+    <div class="col-md-8">
+        <h2>Andreas Nugroho</h2>
+        <p class="tag">Software Ninja (5 years experience)</p>
+        <p>"Great place to learn about programming. Come join us!"</p>
+    </div>
+</div>
+<div class="row content-item">
+    <div class="col-md-4">
+        <img src="{% static 'images/people-ramdhan.png' %}" alt="" class="img-mentee">
+    </div>
+    <div class="col-md-8">
+        <h2>Ramdhan Hidayat</h2>
+        <p class="tag">Master of Chaos (10 years experience)</p>
+        <p>"We make this program with passion, hard work and heart. Let's get rock with us!"</p>
+    </div>
+</div>
+<div class="row content-item">
+    <div class="col-md-4">
+        <img src="{% static 'images/people-trimo.png' %}" alt="" class="img-mentee">
+    </div>
+    <div class="col-md-8">
+        <h2>Trimo Leksono</h2>
+        <p class="tag">Magician (8 years experience)</p>
+        <p>"The best place for who want to be a great IT talent."</p>
+    </div>
+</div>
+{% endblock %}

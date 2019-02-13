@@ -1,0 +1,26 @@
+{% extends 'template.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Mentee - Alpha Tech Academy</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="row content-item">
+    <div class="title-page"><h4>Our Mentee</h4></div>
+</div>
+
+{% for mentee in mentees %}
+<div class="row content-item">
+    <div class="col-md-4">
+        <img src="{{mentee.photo.url}}" width=100%>
+    </div>
+    <div class="col-md-8">
+        <h2>{{mentee.full_name}}</h2>
+        <p>{{mentee.quote}}</p>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'template.html' %}
+{% load static %}
+
+{% block head %}
+        <title>Mentor - Alpha Tech Academy</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="row content-item">
+    <div class="title-page"><h4>Our Mentor</h4></div>
+</div>
+
+{% for mentor in mentors %}
+<div class="row content-item">
+    <div class="col-md-4">
+        <img src="{{mentor.photo.url}}" class="img-mentee">
+    </div>
+    <div class="col-md-8">
+        <h2>{{mentor.full_name}}</h2>
+        <p class="tag">{{mentor.experience}}</p>
+        <p>{{mentor.quote}}</p>
+    </div>
+</div>
+{% endfor %}
+
+
+
+{% endblock %}

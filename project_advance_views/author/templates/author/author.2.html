@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Author - Alpha Tech Academy</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="maestro@alphatech.id">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Alpha Tech Academy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header col-md-3">
+                        <a class="navbar-brand" href="#">Alpha Tech Academy</a>
+                    </div>
+                    <ul class="nav navbar-nav justify-content-end col-md-9">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                        <li><a href="{% url 'mentor' %}">Mentor</a></li>
+                        <li><a href="{% url 'mentee' %}">Mentee</a></li>
+                        <li><a href="{% url 'author' %}">Author</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="row banner">
+            <div class="col-md-12 text-center banner-content">
+                <div class="banner-item">
+                    <div ><img src="{% static 'images/alpha-logo.png' %}" alt=""></div>
+                    <div ><h1>Alpha Tech Academy</h1></div>
+                    <div >Alpha Tech Academy is a tech talent incubator that gives everyone (even not IT background) a chance to be a professional Tech talent within 3 months. Contact person: Email : academy@alphatech.id Mobile phone : 0877 9609 9530</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="wrapper">
+                <div class="content-wrapper">
+                    <div class="row content-item">
+                        <div class="ful-width">
+                            <img src="{% static 'images/profile-pic2.jpg' %}" alt="" class="blog">
+                        </div>
+                        <div class="ful-width">
+                            <h1>Nama Author</h1>
+                        </div>
+                        <div class="ful-width">
+                            <p><strong>Please Write your Summary,</strong> Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet.</p>
+                        </div>
+                        <div class="ful-width">
+                            <a href="#">Baca Selengkapnya</a>
+                        </div>
+                        <div class="ful-width">
+                            <br/>
+                            <table>
+                                <tr>
+                                    <td style="width: 250px">Alamat</td><td>: Alamat Author</td>
+                                </tr>
+                                <tr>
+                                    <td>Telephone</td><td>: Author's Telephone</td>
+                                </tr>
+                                <tr>
+                                    <td>Education</td><td>: Author's Education</td>
+                                </tr>
+                                <tr>
+                                    <td>Profession</td><td>: Author's Profession</td>
+                                </tr>
+                                <tr>
+                                    <td>Nationality</td><td>: Author's Nationality</td>
+                                </tr>
+                                <tr>
+                                    <td>Company</td><td>: Author's Company</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td><td>: Author's Email</td>
+                                </tr>
+                                <tr>
+                                    <td>Adress</td><td>: Author's Adress</td>
+                                </tr>
+                            </table>
+                            <br/>
+                        </div>
+                        <div class="ful-width">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.31421843512!2d112.6089190734025!3d-7.96644304050474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882865ded0697%3A0x5e67e83abb74c16d!2sJl.+Raya+Tidar+No.23%2C+Karangbesuki%2C+Sukun%2C+Kota+Malang%2C+Jawa+Timur+65146!5e0!3m2!1sen!2sid!4v1549978638000" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row content-product">
+            <div class="col-md-8 product-parent">
+                <div class="product">
+                    <p>Our Product:</p>
+                </div>
+                <div class="product">
+                    <img src="{% static 'images/logo-grey-alphapay.png' %}">
+                </div>
+                <div class="product">
+                    <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+                </div>
+                <div class="product">
+                    <img src="{% static 'images/logo-grey-alphabill.png' %}">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <strong>Contact Person:</strong>Email: academy@alphatech.id
+        </footer>
+    </body>
+</html>

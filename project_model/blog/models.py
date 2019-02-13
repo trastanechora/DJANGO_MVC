@@ -24,3 +24,5 @@ class BlogPost(models.Model):
     Content = models.TextField(max_length=255)
     Created_by = models.CharField(max_length=50)
     Posted_by = models.ForeignKey(Mentee, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.Title

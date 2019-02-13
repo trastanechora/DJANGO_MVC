@@ -1,0 +1,26 @@
+/* .navbar {
+    background-color: white;
+}
+
+nav.navbar.navbar-default {
+    width: 100%;
+} */
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.nav.navbar-nav {
+    flex-direction: row;
+}
+
+ul.nav.navbar-nav li {
+    margin-right: 5%;
+}
+
+.banner {
+    color: white;
+    background-color: #2ec6ce;
+    height: 300px;
+}
